@@ -14,6 +14,13 @@
 		0D2BF2051B0DC7C7009EF79C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2BF2041B0DC7C7009EF79C /* Images.xcassets */; };
 		0D2BF2081B0DC7C7009EF79C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2BF2061B0DC7C7009EF79C /* LaunchScreen.xib */; };
 		0D2BF2141B0DC7C7009EF79C /* ToolKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BF2131B0DC7C7009EF79C /* ToolKitTests.m */; };
+		0D2BF2241B0DCA5D009EF79C /* ComBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BF2231B0DCA5D009EF79C /* ComBox.m */; };
+		0D2BF2261B0DD019009EF79C /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2BF2251B0DD019009EF79C /* triangle.png */; };
+		0DAFBA941B0ED6FA00F6D56E /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAFBA931B0ED6FA00F6D56E /* ViewController1.m */; };
+		0DAFBA9B1B0F08EF00F6D56E /* ViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAFBA9A1B0F08EF00F6D56E /* ViewController0.m */; };
+		0DAFBA9E1B0F099F00F6D56E /* RippleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAFBA9D1B0F099F00F6D56E /* RippleButton.m */; };
+		0DC527631B12B10F00ABB9C3 /* RollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC527621B12B10F00ABB9C3 /* RollLabel.m */; };
+		0DC527661B12B38F00ABB9C3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC527651B12B38F00ABB9C3 /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,19 @@
 		0D2BF20D1B0DC7C7009EF79C /* ToolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2BF2121B0DC7C7009EF79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D2BF2131B0DC7C7009EF79C /* ToolKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolKitTests.m; sourceTree = "<group>"; };
+		0D2BF2221B0DCA5D009EF79C /* ComBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBox.h; sourceTree = "<group>"; };
+		0D2BF2231B0DCA5D009EF79C /* ComBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComBox.m; sourceTree = "<group>"; };
+		0D2BF2251B0DD019009EF79C /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+		0DAFBA921B0ED6FA00F6D56E /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		0DAFBA931B0ED6FA00F6D56E /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		0DAFBA991B0F08EF00F6D56E /* ViewController0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController0.h; sourceTree = "<group>"; };
+		0DAFBA9A1B0F08EF00F6D56E /* ViewController0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController0.m; sourceTree = "<group>"; };
+		0DAFBA9C1B0F099F00F6D56E /* RippleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleButton.h; sourceTree = "<group>"; };
+		0DAFBA9D1B0F099F00F6D56E /* RippleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleButton.m; sourceTree = "<group>"; };
+		0DC527611B12B10F00ABB9C3 /* RollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollLabel.h; sourceTree = "<group>"; };
+		0DC527621B12B10F00ABB9C3 /* RollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollLabel.m; sourceTree = "<group>"; };
+		0DC527641B12B38F00ABB9C3 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		0DC527651B12B38F00ABB9C3 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +83,9 @@
 		0D2BF1EB1B0DC7C7009EF79C = {
 			isa = PBXGroup;
 			children = (
+				0DC527601B12AFA700ABB9C3 /* rollLabel */,
+				0DAFBA951B0F07CF00F6D56E /* rippleButton */,
+				0D2BF2211B0DCA4D009EF79C /* comBox */,
 				0D2BF1F61B0DC7C7009EF79C /* ToolKit */,
 				0D2BF2101B0DC7C7009EF79C /* ToolKitTests */,
 				0D2BF1F51B0DC7C7009EF79C /* Products */,
@@ -117,6 +140,40 @@
 				0D2BF2121B0DC7C7009EF79C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D2BF2211B0DCA4D009EF79C /* comBox */ = {
+			isa = PBXGroup;
+			children = (
+				0D2BF2221B0DCA5D009EF79C /* ComBox.h */,
+				0D2BF2231B0DCA5D009EF79C /* ComBox.m */,
+				0D2BF2251B0DD019009EF79C /* triangle.png */,
+				0DAFBA921B0ED6FA00F6D56E /* ViewController1.h */,
+				0DAFBA931B0ED6FA00F6D56E /* ViewController1.m */,
+			);
+			path = comBox;
+			sourceTree = "<group>";
+		};
+		0DAFBA951B0F07CF00F6D56E /* rippleButton */ = {
+			isa = PBXGroup;
+			children = (
+				0DAFBA991B0F08EF00F6D56E /* ViewController0.h */,
+				0DAFBA9A1B0F08EF00F6D56E /* ViewController0.m */,
+				0DAFBA9C1B0F099F00F6D56E /* RippleButton.h */,
+				0DAFBA9D1B0F099F00F6D56E /* RippleButton.m */,
+			);
+			path = rippleButton;
+			sourceTree = "<group>";
+		};
+		0DC527601B12AFA700ABB9C3 /* rollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0DC527611B12B10F00ABB9C3 /* RollLabel.h */,
+				0DC527621B12B10F00ABB9C3 /* RollLabel.m */,
+				0DC527641B12B38F00ABB9C3 /* ViewController2.h */,
+				0DC527651B12B38F00ABB9C3 /* ViewController2.m */,
+			);
+			path = rollLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +258,7 @@
 			files = (
 				0D2BF2031B0DC7C7009EF79C /* Main.storyboard in Resources */,
 				0D2BF2081B0DC7C7009EF79C /* LaunchScreen.xib in Resources */,
+				0D2BF2261B0DD019009EF79C /* triangle.png in Resources */,
 				0D2BF2051B0DC7C7009EF79C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DAFBA941B0ED6FA00F6D56E /* ViewController1.m in Sources */,
 				0D2BF2001B0DC7C7009EF79C /* ViewController.m in Sources */,
+				0DAFBA9B1B0F08EF00F6D56E /* ViewController0.m in Sources */,
 				0D2BF1FD1B0DC7C7009EF79C /* AppDelegate.m in Sources */,
 				0D2BF1FA1B0DC7C7009EF79C /* main.m in Sources */,
+				0DC527661B12B38F00ABB9C3 /* ViewController2.m in Sources */,
+				0D2BF2241B0DCA5D009EF79C /* ComBox.m in Sources */,
+				0DAFBA9E1B0F099F00F6D56E /* RippleButton.m in Sources */,
+				0DC527631B12B10F00ABB9C3 /* RollLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +480,7 @@
 				0D2BF2191B0DC7C7009EF79C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D2BF21A1B0DC7C7009EF79C /* Build configuration list for PBXNativeTarget "ToolKitTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +489,7 @@
 				0D2BF21C1B0DC7C7009EF79C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
