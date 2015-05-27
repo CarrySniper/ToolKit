@@ -25,10 +25,15 @@
     self = [super initWithFrame:frame];
     if (self) {
         UIButton *circleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        circleBtn.frame = CGRectMake((WIDTH-Diameter)/2, (WIDTH-Diameter)/2, Diameter, Diameter);
+        circleBtn.frame = CGRectMake((WIDTH-Diameter)/2, (HEIGHT-Diameter)/2, Diameter, Diameter);
         circleBtn.backgroundColor = [UIColor purpleColor];
         circleBtn.layer.cornerRadius = Diameter/2;
         circleBtn.layer.masksToBounds = YES;
+        //设置按钮字体大小 颜色 状态
+        NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:@"click"];
+        [str addAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:20], NSForegroundColorAttributeName:[UIColor whiteColor]} range:NSMakeRange(0, [str  length])];
+        [circleBtn setAttributedTitle:str forState:UIControlStateNormal];
+        
         [circleBtn addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:circleBtn];
         
@@ -36,7 +41,7 @@
         /*
             定时器
          */
-        _timer = [NSTimer scheduledTimerWithTimeInterval:0.01f target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:0.02f target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
         [[NSRunLoop  currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
         [_timer setFireDate:[NSDate distantFuture]];//关闭定时器
         

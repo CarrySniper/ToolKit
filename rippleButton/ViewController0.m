@@ -21,8 +21,17 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"RippleButton-产生波纹按钮";
     
-    RippleButton *ripBtn = [[RippleButton alloc]initWithFrame:CGRectMake(10, 74, self.view.frame.size.width - 20, self.view.frame.size.width - 20)];
-    ripBtn.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    UIImage *image = [UIImage imageNamed:@"bgImage.png"];
+    self.view.layer.contents = (id) image.CGImage;
+    //添加模糊层
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+    UIVisualEffectView *_effectview = [[UIVisualEffectView alloc] initWithEffect:blur];
+    _effectview.frame = CGRectMake(20, 84, self.view.frame.size.width - 40, self.view.frame.size.height-104);
+    [self.view addSubview:_effectview];
+    _effectview.alpha = 0.7;
+    
+    RippleButton *ripBtn = [[RippleButton alloc]initWithFrame:self.view.bounds];
+    ripBtn.backgroundColor = [UIColor clearColor];
     [self.view addSubview:ripBtn];
 }
 
