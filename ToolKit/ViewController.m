@@ -11,6 +11,7 @@
 #import "ViewController0.h"
 #import "ViewController1.h"
 #import "ViewController2.h"
+#import "ViewController3.h"
 
 @interface ViewController (){
     NSArray *ary;
@@ -41,6 +42,7 @@
            @"rippleButton-产生波纹按钮",
            @"comBox-下拉框",
            @"rollLabel-根据字符串长度滚动标签",
+           @"两个scrollView制作菜单页",
            nil];
     
 }
@@ -92,6 +94,11 @@
             break;
         case 2:{
             ViewController2 *vc = [[ViewController2 alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 3:{
+            ViewController3 *vc = [[ViewController3 alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
