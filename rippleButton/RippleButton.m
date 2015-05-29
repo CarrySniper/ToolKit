@@ -41,7 +41,7 @@
         /*
             定时器
          */
-        _timer = [NSTimer scheduledTimerWithTimeInterval:0.02f target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:0.015f target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
         [[NSRunLoop  currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
         [_timer setFireDate:[NSDate distantFuture]];//关闭定时器
         

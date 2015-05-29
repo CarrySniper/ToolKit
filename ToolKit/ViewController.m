@@ -12,6 +12,7 @@
 #import "ViewController1.h"
 #import "ViewController2.h"
 #import "ViewController3.h"
+#import "ViewController4.h"
 
 @interface ViewController (){
     NSArray *ary;
@@ -30,6 +31,8 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:20], NSFontAttributeName, nil]];//iOS6之后
     
+//    //修复偏移现象
+//    self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.dataSource = self;
@@ -43,6 +46,7 @@
            @"comBox-下拉框",
            @"rollLabel-根据字符串长度滚动标签",
            @"两个scrollView制作菜单页",
+           @"ImagePagePots自定义图片Pots",
            nil];
     
 }
@@ -99,6 +103,11 @@
             break;
         case 3:{
             ViewController3 *vc = [[ViewController3 alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 4:{
+            ViewController4 *vc = [[ViewController4 alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

@@ -48,7 +48,7 @@
         [self addSubview:_scrollView];
         
         //添加模糊层
-        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
         _effectview = [[UIVisualEffectView alloc] initWithEffect:blur];
         _effectview.frame = CGRectMake(0, Bar_HEIGHT, WIDTH, HEIGHT - Bar_HEIGHT);
         [self addSubview:_effectview];
@@ -133,7 +133,7 @@
     
     
     [UIView animateWithDuration:0.5 animations:^{
-        _effectview.alpha = 0.6;
+        _effectview.alpha = 0.5;
     }];
     [UIView animateWithDuration:0.5 animations:^{
         _effectview.alpha = 0;

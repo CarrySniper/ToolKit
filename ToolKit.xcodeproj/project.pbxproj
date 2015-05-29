@@ -21,6 +21,10 @@
 		0DAFBA941B0ED6FA00F6D56E /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAFBA931B0ED6FA00F6D56E /* ViewController1.m */; };
 		0DAFBA9B1B0F08EF00F6D56E /* ViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAFBA9A1B0F08EF00F6D56E /* ViewController0.m */; };
 		0DAFBA9E1B0F099F00F6D56E /* RippleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAFBA9D1B0F099F00F6D56E /* RippleButton.m */; };
+		0DB3A0D71B171D4B00BB2C1A /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A0D61B171D4B00BB2C1A /* ViewController4.m */; };
+		0DB3A0DA1B171F7900BB2C1A /* ydy_point_choose@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A0D81B171F7900BB2C1A /* ydy_point_choose@3x.png */; };
+		0DB3A0DB1B171F7900BB2C1A /* ydy_point_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A0D91B171F7900BB2C1A /* ydy_point_normal@3x.png */; };
+		0DB4DA521B1805B3001B444B /* ImagePagePots.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB4DA511B1805B3001B444B /* ImagePagePots.m */; };
 		0DC527631B12B10F00ABB9C3 /* RollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC527621B12B10F00ABB9C3 /* RollLabel.m */; };
 		0DC527661B12B38F00ABB9C3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC527651B12B38F00ABB9C3 /* ViewController2.m */; };
 /* End PBXBuildFile section */
@@ -62,6 +66,12 @@
 		0DAFBA9A1B0F08EF00F6D56E /* ViewController0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController0.m; sourceTree = "<group>"; };
 		0DAFBA9C1B0F099F00F6D56E /* RippleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleButton.h; sourceTree = "<group>"; };
 		0DAFBA9D1B0F099F00F6D56E /* RippleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleButton.m; sourceTree = "<group>"; };
+		0DB3A0D51B171D4B00BB2C1A /* ViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
+		0DB3A0D61B171D4B00BB2C1A /* ViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
+		0DB3A0D81B171F7900BB2C1A /* ydy_point_choose@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ydy_point_choose@3x.png"; sourceTree = "<group>"; };
+		0DB3A0D91B171F7900BB2C1A /* ydy_point_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ydy_point_normal@3x.png"; sourceTree = "<group>"; };
+		0DB4DA501B1805B3001B444B /* ImagePagePots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePagePots.h; sourceTree = "<group>"; };
+		0DB4DA511B1805B3001B444B /* ImagePagePots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePagePots.m; sourceTree = "<group>"; };
 		0DC527611B12B10F00ABB9C3 /* RollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollLabel.h; sourceTree = "<group>"; };
 		0DC527621B12B10F00ABB9C3 /* RollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollLabel.m; sourceTree = "<group>"; };
 		0DC527641B12B38F00ABB9C3 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
@@ -89,6 +99,7 @@
 		0D2BF1EB1B0DC7C7009EF79C = {
 			isa = PBXGroup;
 			children = (
+				0DB3A0D11B1717D800BB2C1A /* imagePageControl */,
 				0DAC8E651B15BF15003297A7 /* scrollViewMenu */,
 				0DC527601B12AFA700ABB9C3 /* rollLabel */,
 				0DAFBA951B0F07CF00F6D56E /* rippleButton */,
@@ -183,6 +194,19 @@
 			path = rippleButton;
 			sourceTree = "<group>";
 		};
+		0DB3A0D11B1717D800BB2C1A /* imagePageControl */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3A0D81B171F7900BB2C1A /* ydy_point_choose@3x.png */,
+				0DB3A0D91B171F7900BB2C1A /* ydy_point_normal@3x.png */,
+				0DB3A0D51B171D4B00BB2C1A /* ViewController4.h */,
+				0DB3A0D61B171D4B00BB2C1A /* ViewController4.m */,
+				0DB4DA501B1805B3001B444B /* ImagePagePots.h */,
+				0DB4DA511B1805B3001B444B /* ImagePagePots.m */,
+			);
+			path = imagePageControl;
+			sourceTree = "<group>";
+		};
 		0DC527601B12AFA700ABB9C3 /* rollLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,7 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB3A0DB1B171F7900BB2C1A /* ydy_point_normal@3x.png in Resources */,
 				0D2BF2031B0DC7C7009EF79C /* Main.storyboard in Resources */,
+				0DB3A0DA1B171F7900BB2C1A /* ydy_point_choose@3x.png in Resources */,
 				0D2BF2081B0DC7C7009EF79C /* LaunchScreen.xib in Resources */,
 				0D2BF2261B0DD019009EF79C /* triangle.png in Resources */,
 				0D2BF2051B0DC7C7009EF79C /* Images.xcassets in Resources */,
@@ -304,7 +330,9 @@
 				0DC527661B12B38F00ABB9C3 /* ViewController2.m in Sources */,
 				0D2BF2241B0DCA5D009EF79C /* ComBox.m in Sources */,
 				0DAFBA9E1B0F099F00F6D56E /* RippleButton.m in Sources */,
+				0DB3A0D71B171D4B00BB2C1A /* ViewController4.m in Sources */,
 				0DC527631B12B10F00ABB9C3 /* RollLabel.m in Sources */,
+				0DB4DA521B1805B3001B444B /* ImagePagePots.m in Sources */,
 				0DAC8E6B1B15BF45003297A7 /* ViewController3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -420,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -432,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ToolKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -442,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ToolKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
