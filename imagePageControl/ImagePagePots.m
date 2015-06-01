@@ -77,4 +77,11 @@ static CGFloat start;
     imgView.frame = newFrame;
 }
 
+-(void)dealloc{
+    _activeImage = nil;
+    _unActiveImage = nil;
+    
+    _numberOfPages = 0;
+}
+
 @end
