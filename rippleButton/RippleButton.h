@@ -10,7 +10,7 @@
 
 @interface RippleButton : UIView{
     NSTimer *_timer;    //定时器
-    float ary[22];//最多显示n个圈
+    float ary[12];//最多显示n个圈
     
     CGPoint _centerPoint;
     

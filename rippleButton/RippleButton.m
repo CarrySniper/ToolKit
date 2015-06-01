@@ -16,7 +16,7 @@
 #define PI 3.14159265358979323846
 #define Diameter 80 //直径
 
-
+static int number;
 
 @implementation RippleButton
 
@@ -41,7 +41,7 @@
         /*
             定时器
          */
-        _timer = [NSTimer scheduledTimerWithTimeInterval:0.015f target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:0.02f target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
         [[NSRunLoop  currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
         [_timer setFireDate:[NSDate distantFuture]];//关闭定时器
         
@@ -49,14 +49,16 @@
         _stop =[NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(countTime) userInfo:nil repeats:YES];
         [[NSRunLoop  currentRunLoop] addTimer:_stop forMode:NSDefaultRunLoopMode];
         [_stop setFireDate:[NSDate distantFuture]];//关闭定时器
+        
+        number = sizeof(ary)/sizeof(int);
     }
     return self;
 }
 
 -(void)timerAction{
-    for (int i = 0; i<sizeof(ary)/sizeof(int); i++) {
+    for (int i = 0; i < number; i++) {
         if (ary[i] > 0) {
-            ary[i] +=2.50;
+            ary[i] +=2.5;
         }
     }
     [self setNeedsDisplay];//会调用自动调用drawRect方法,方便绘图
@@ -64,7 +66,7 @@
 
 - (void)clickAction{
 
-    for (int i = 0; i<sizeof(ary)/sizeof(int); i++) {
+    for (int i = 0; i < number; i++) {
         if (ary[i] == 0) {
             ary[i] = Diameter/2;
             break;
@@ -77,7 +79,7 @@
         [_timer setFireDate:[NSDate distantPast]];//开启定时器
         [_stop setFireDate:[NSDate distantPast]];//开启定时器
     }
-    _count = 5;
+    _count = 3;
 }
 
 - (void)countTime{
@@ -99,7 +101,8 @@
 //    int green = rand() % 255;
 //    int blue = rand() % 255;
     
-    for (int i = 0; i<sizeof(ary)/sizeof(int); i++) {
+    
+    for (int i = 0; i < number; i++) {
         /*
          边框圆
          CG_EXTERN void CGContextSetRGBStrokeColor(CGContextRef context, CGFloat red,
@@ -109,19 +112,21 @@
          CGFloat radius, CGFloat startAngle, CGFloat endAngle, int clockwise)
          */
         
+        if (ary[i] > WIDTH/2){
+            ary[i] = 0;
+            continue;
+        }
         
-        if (ary[i] > 0 && ary[i] < 300) {
             CGContextRef context = UIGraphicsGetCurrentContext();
             CGContextSetRGBStrokeColor(context, 168/255.0, 88/255.0, 168/255.0, 1);
 //            CGContextSetRGBStrokeColor(context, red/255.0, green/255.0, blue/255.0, 1);
-            CGContextSetLineWidth(context, 2.50);
+            CGContextSetLineWidth(context, 4);
             
             CGContextAddArc(context, _centerPoint.x, _centerPoint.y, ary[i], 0, 2*M_PI, 0);
             CGContextDrawPath(context, kCGPathStroke);
-        }else if (ary[i] > 300) {
-            ary[i] = 0;
-        }
+        
     }
+    
 }
 
 - (void)dealloc{
