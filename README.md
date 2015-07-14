@@ -1,7 +1,7 @@
 # ToolKit
 自做一些UI工具库。预防遇到奇葩前端设计需求的。
-          @"rippleButton-产生波纹按钮",
-          @"comBox-下拉框",
+          @"rippleButton-产生波纹按钮",\r
+          @"comBox-下拉框",\r
           @"rollLabel-根据字符串长度滚动标签",
           @"两个scrollView制作菜单页",
           @"ImagePagePots自定义图片Pots",
