@@ -50,7 +50,7 @@
     vc5.contentMode = UIViewContentModeScaleAspectFit;
     
     NSArray *aryV = @[vc1,vc2,vc3,vc4,vc5];
-    NSArray *aryT = @[@"vc1红",@"vc2绿",@"vc3蓝",@"vc4橙",@"vc5紫"];
+    NSArray *aryT = @[@"vc1红",@"vc2蓝",@"vc3绿",@"vc4橙",@"vc5紫"];
     
 //    [svMenu setViewArray:aryV andTitleArray:aryT];
     //或者使用2行代替
